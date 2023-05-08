@@ -9,12 +9,10 @@ const Header = () => {
   const getMenuStyle = (menuOpened) => {
     if (document.documentElement.clientWidth <= 800) {
       return {
-        // right: !menuOpened && "-100%",
-        display: !menuOpened && "none",
+        right: !menuOpened && "-100%",
       };
     }
   };
-
   return (
     <>
       <section className="h-wrapper">
